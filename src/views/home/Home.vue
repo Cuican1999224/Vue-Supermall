@@ -3,8 +3,7 @@
     <HomeNavBar/>
     <TabControl ref = "tabControl1" class = "tab-control1" :items = "['流行','新款','精选']" @TabClick = "changeGoods"
                 v-show = "showTabOffsetTop"/>
-    <Scroll class = "scroll" ref = "scroll"
-            :probeType.Number = 3 :pullUpLoad.Boolean = "true"
+    <Scroll class = "scroll" ref = "scroll"  :probe-type = "3"  :pull-up-load = 'true'
             @scroll = "scroll" @pullingUp = "pullingUp">
       <HomeSwipe :banners = "banners" class = "home-swipe" @imageLoad = "imageLoad"/>
       <HomeRecommendView :recommends = "recommends" @imageLoad = "imageLoad"/>
